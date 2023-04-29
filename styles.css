@@ -1,0 +1,102 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* generals */
+html{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(58, 58, 158, .8);
+    color: white;
+    font-size: 18px;
+}
+
+
+/* utilites */
+
+.container{
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: rgba(40,40,70,.8);
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+
+/* HEADER */
+header{
+    padding: 70px 0 50px;
+    text-align: center;
+}
+
+#title{
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+#description{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* MAIN */
+.form-section{
+    margin-bottom: 20px;
+}
+
+/* name */
+#name input,
+select{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px 0 20px;
+    font-size: 18px;
+}
+
+/* radio */
+#radio label{
+    display: block;
+}
+
+/* checkbox */
+#checkbox label{
+    display: block;
+    padding: 5px;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+   margin-right: 10px;
+   width: 20px;
+   height: 20px;
+   vertical-align: middle;
+}
+
+#textarea{
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 500px;
+    min-height: 100px;
+    border-radius: 4px;
+}
+
+#submit{
+    padding: 12px;
+    width: 100%;
+    background-color: #37af64;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
