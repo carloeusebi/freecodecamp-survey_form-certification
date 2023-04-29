@@ -35,7 +35,7 @@
                         <input type="email" name="email" id="email" placeholder="Enter your Email" required>
                     </label>
                     <label for="age" id="number-label">Age (optional)
-                        <input type="number" name="age" id="age" placeholder="Age" min="18" max="120">
+                        <input type="number" name="age" id="number" placeholder="Age" min="18" max="120">
                     </label>
                     <label for="dropdown">Name
                         <select name="role" id="dropdown">
@@ -53,15 +53,15 @@
                 <div class="form-section">
                     <p>Would you recommend freeCodeCamp to a friend?</p>
                     <label for="definetly">
-                        <input type="radio" name="definetly" id="definetly" value="definetly" checked>
+                        <input type="radio" name="recommend" id="definetly" value="definetly" checked>
                         Definetly
                     </label>
                     <label for="maybe">
-                        <input type="radio" name="maybe" id="maybe" value="maybe">
+                        <input type="radio" name="recommend" id="maybe" value="maybe">
                         Maybe
                     </label>
                     <label for="not-sure">
-                        <input type="radio" name="not-sure" id="not-sure" value="not-sure">
+                        <input type="radio" name="recommend" id="not-sure" value="not-sure">
                         Not sure
                     </label>
                 </div>
@@ -139,7 +139,7 @@
                 </div>
 
                 <!-- submit -->
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
             </form>
         </div>
     </main>
