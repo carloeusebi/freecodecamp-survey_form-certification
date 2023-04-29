@@ -13,12 +13,131 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet">
 </head>
 <body>
-    <header>
 
+    <!-- HEADAER -->
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
+
+    <!-- MAIN -->
     <main>
         <div class="container">
-            <form>
+
+            <form id="survey-form">
+
+                <!-- name email etc -->
+                <div class="form-section">
+                    <label for="name" id="name-label">Name
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                    </label>
+                    <label for="email" id="email-label">Email
+                        <input type="email" name="email" placeholder="Enter your Email" required>
+                    </label>
+                    <label for="age" id="number-label">Age (optional)
+                        <input type="number" name="age" placeholder="Age" min="18" max="120">
+                    </label>
+                    <label for="role">Name
+                        <select name="role" id="dropdown">
+                            <option disabled selected value>Select current role</option>
+                            <option value="studend">Student</option>
+                            <option value="job">Full Time Job</option>
+                            <option value="learner">Full Time Learner</option>
+                            <option value="prefernot">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+
+                <!-- recommend -->
+                <div class="form-section">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <label for="recommend">
+                        <input type="radio" name="recommend" value="definetly" checked>
+                        Definetly
+                    </label>
+                    <label for="recommend">
+                        <input type="radio" name="recommend" value="maybe">
+                        Maybe
+                    </label>
+                    <label for="recommend">
+                        <input type="radio" name="recommend" value="not-sure">
+                        Not sure
+                    </label>
+                </div>
+
+                <!-- favourite -->
+                <div class="form-section">
+                    <label for="favourite"> What is your favourite feature of freeCodeCamp?
+                        <select name="favourite" id="favourite">
+                            <option disabled selected value>Select an option</option>
+                            <option value="challenges">Challenges</option>
+                            <option value="projects">Projects</option>
+                            <option value="communities">Communities</option>
+                            <option value="open-sources">Open Sources</option>
+                        </select>
+                    </label>
+                </div>
+                    
+                <!-- improving -->
+                <div class="form-section">
+                    <p>What would you like to see improved? (Check all that apply)</p>
+                    <label for="front-end">
+                        <input name="front-end" type="checkbox" value="front-end">
+                        Front-end Projects
+                    </label>
+                    <label for="back-end">
+                        <input name="back-end" type="checkbox" value="back-end">
+                        Back-end Projects
+                    </label>
+                    <label for="data">
+                        <input name="data" type="checkbox" value="data">
+                        Data Visualization
+                    </label>
+                    <label for="challenges">
+                        <input name="challenges" type="checkbox" value="challenges">
+                        Challenges
+                    </label>
+                    <label for="open-source">
+                        <input name="open-source" type="checkbox" value="open-source">
+                        Open Source Community
+                    </label>
+                    <label for="gitter">
+                        <input name="gitter" type="checkbox" value="gitter">
+                        Gitter help rooms
+                    </label>
+                    <label for="video">
+                        <input name="video" type="checkbox" value="video">
+                        Videos
+                    </label>
+                    <label for="meetups">
+                        <input name="meetups" type="checkbox" value="meetups">
+                        Meetups
+                    </label>
+                    <label for="wiki">
+                        <input name="wiki" type="checkbox" value="wiki">
+                        Wiki
+                    </label>
+                    <label for="forum">
+                        <input name="forum" type="checkbox" value="forum">
+                        Forum
+                    </label>
+                    <label for="additionals">
+                        <input name="additionals" type="checkbox" value="additionals">
+                       Additional Courses
+                    </label>
+                </div>
+
+                <!-- suggestions -->
+                <div class="form-section">
+                    <label for="textarea">Any comments or suggestions?</label>
+                    <textarea id="textarea" name="textarea"
+                    rows="20"
+                    cols="10"
+                    placeholder="Enter your comment here">
+                    </textarea>
+                </div>
+
 
             </form>
         </div>
